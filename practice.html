@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <script src="https://kit.fontawesome.com/45325e42a1.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 10px 0 0 10px;
+        }
+        td{
+            border: 1px solid lightgray;
+            padding: 4px 10px;
+            text-align: center;
+        }
+        th{
+            border: 2px solid lightgray;
+            padding: 4px 10px;
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        footer{
+            text-align: center;
+
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: magenta;
+            position: relative;
+            animation-name: myanimation;
+            animation-duration: 3s;
+            animation-iteration-count: 9;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes myanimation{
+            0% {background-color: maroon; left: 0px; top: 0px; border-radius: 0 0 0 0;}
+            25% {background-color: maroon; left: 150px; top: 0px; border-radius: 0 50% 0 0;}
+            50% {background-color: rgb(60, 231, 25); left: 150px; top: 150px; border-radius: 0 50% 50% 0;}
+            75% {background-color: rgb(78, 69, 69); left: 0px; top: 150px; border-radius: 0 50% 50% 50%;}
+            100% {background-color: rgb(190, 228, 20); left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
+        }
+        
+    </style>
+</head>
+<body>      
+    
+    <header>
+        <h1>Practice Day</h1>
+    </header> 
+        
+        <hr>
+    <main>
+        <section class="inline-elements">
+
+            <header>
+                <h2>Example of inline elements in html</h2>
+            </header>
+               <article>
+                    <p>
+                        1.  <strong>HTML inline level elements</strong> can appear in the body of an HTML page.
+                    </p>
+                    <p>
+                        2. It contain data and other<b>inline</b> elements.
+                    </p>
+                    <p>
+                        3. By default, <strong>inline elements</strong> do not begin on new lines.
+                    </p>
+                    <p>
+                        4. <strong>inline elements</strong> create shorter structures(than block level elements)
+                    </p>
+                </article>
+                <article>
+                    <h3>List of inline elements</h3>
+                    <ul>
+                        <li>b, i, small</li>
+                        <li>em, strong</li>
+                        <li>a, br, img, span, sub, sup</li>
+                        <li>button, input, label</li>
+                    </ul>
+                </article>
+               
+        </section>
+        <section class="block-elements">
+                    <header>
+                        <h2>Example of Block Elements</h2>
+                    </header>
+                    <hr>
+                    <article>
+                        <h3>List of block elements</h3>
+                        <ul>
+                            <li>header, footer, ol, ul, li</li>
+                            <li>figure, figcaption, form, div, p, table</li>
+                            <li>article, aside, h1-h6, main, nav, section</li>
+                        </ul>
+                    </article>
+    
+        </section>
+        <section class="css-inlineblock">
+            <header>
+                <h2>CSS inline, inline-block & block</h2>
+            </header>
+            <hr>
+            <article>
+                <p>
+                    <strong> inline</strong> The element doesn’t start on a new line and only occupy just the width it requires. You can’t set the width or height.
+                </p>
+                <p>
+                    <strong>inline-block</strong> It’s formatted just like the inline element, where it doesn’t start on a new line. BUT, you can set width and height values.
+                </p>
+                <p>
+                    <strong>block</strong> The element will start on a new line and occupy the full width available. And you can set width and height values.
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section class="table-1">
+    
+            <header>
+                <h2>Table</h2>
+            </header>
+            <article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>BirthDay</th>
+                            <th>Restaurants</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Tarek Ahmed</td>
+                            <td>Uttara Dhaka</td>
+                            <td>4/4/1994</td>
+                            <td>KFC</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Musfiqur Rahman</td>
+                            <td>Uttara Dhaka</td>
+                            <td>14/7/1994</td>
+                            <td>BFC</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Arif Ahmed</td>
+                            <td>Uttara Dhaka</td>
+                            <td>23/2/1994</td>
+                            <td>HELVETIA</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>KH Sunny</td>
+                            <td>Uttara Dhaka</td>
+                            <td>4/11/1994</td>
+                            <td>De Castle</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Tarek Ahmed 2</td>
+                            <td>Uttara Dhaka</td>
+                            <td>12/8/1994</td>
+                            <td>Sharma House</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+    
+        </section>
+        <hr>
+        <section class="semantic-tag">
+                <header>
+                    <h2>Semantic Tag</h2>
+                </header>
+                <article>
+                    <p>
+                        A semantic element clearly describes its meaning to both the browser and the developer.
+                    </p>
+                    <h3>List of Semantic tag Elements</h3>
+                    <ul>
+                        <li>
+                            article, aside,figcaption, figure, footer, header, main, nav, section
+                        </li>
+                    </ul>
+                </article>
+    
+        </section>
+    
+        <section class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/X40Tr3Q-BvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <div class="box"></div>
+        
+    </main>
+    
+    <footer>
+        <h1><i class="fab fa-linkedin"></i> <i class="fab fa-facebook-square"></i> <i class="fab fa-github-square"></i></h1>
+        <p>Practice copyright 2022</p>
+        
+    </footer>
+
+</body>
+</html>
